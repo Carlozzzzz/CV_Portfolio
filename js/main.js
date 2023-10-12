@@ -50,8 +50,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .expertise-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content h1, .about-img, .skill-bar, .bar span, .contact-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content, .contact-content', { origin: 'right' });
 
 
 /*================================ typed js ================================*/
