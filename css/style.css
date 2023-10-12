@@ -53,7 +53,7 @@ section {
 
 .logo {
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--main-color);
     font-weight: 600;
     cursor: default;
 }
@@ -70,6 +70,22 @@ section {
     color: var(--main-color);
 }
 
+.navbar .hiremeBtn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--second-bg-color) !important;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.navbar .hiremeBtn:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+
+}
 
 #menu-icon {
     font-size: 3.6rem;
@@ -86,6 +102,8 @@ section {
 
 .home-img img{
     width: 35vw;
+    border-radius: 50%;
+    box-shadow: 0 .01rem 1.5rem var(--main-color);
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -420,6 +438,7 @@ span {
 /* Portfolio */
 .portfolio {
     background: var(--second-bg-color);
+    position: relative;
 }
 
 .portfolio h2 {
@@ -457,7 +476,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,10 +499,11 @@ span {
 
 .portfolio-layer p {
     font-size: 1.6rem;
-    margin: .3rem 0 1rem;
+    /* margin: .3rem 0 1rem; */
+    line-height: 1.7rem;
 }
 
-.portfolio-layer a{
+.portfolio-layer button{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -491,7 +511,50 @@ span {
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+    cursor: pointer;
 }
+
+
+.portfolio .popup-video{
+    position: fixed;
+    top:  0;
+    left: 0;
+    z-index: 100; 
+    background: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    display: none; /* Hide first - open later*/
+}
+
+.portfolio .popup-video video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    object-fit: cover;
+
+}
+
+.portfolio .popup-video span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .portfolio .popup-video video {
+        width: 95%;
+    }
+}
+
 
 /* Contact */
 .contact {

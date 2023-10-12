@@ -62,3 +62,55 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
+/*================================ video player ================================*/
+const portfolioBox =  document.querySelectorAll('.portfolio-container .portfolio-box button');
+const closeVideo = document.querySelector('.popup-video span');
+// Opening Video
+portfolioBox.forEach(box => {
+    box.onclick = () => {
+        const btnClass = box.classList[0];
+        const popupVideo =  document.querySelector('.popup-video');
+        const videoPlayer = document.querySelector('.popup-video video');
+
+        popupVideo.style.display = "block";
+        videoPlayer.src = getVideoLink(btnClass);
+    }
+})
+
+closeVideo.onclick = () => {
+    const popupVideo = document.querySelector('.popup-video');
+    const videoPlayer = document.querySelector('.popup-video video');
+
+    popupVideo.style.display = "none";
+    videoPlayer.src = '';
+};
+
+function getVideoLink(btnClass) {
+    let result = "";
+    switch (btnClass) {
+        case "online-enrollmentBtn":
+            result = "files/onlineenrollment.mp4";
+            break;
+        case "webappBtn":
+            result = "files/webapp.mp4";
+            break;
+        case "swpssBtn":
+            result = "files/swpss.mp4";
+            break;
+        case "tiktaktoBtn":
+            result = "files/tiktaktoe.mp4";
+            break;
+        case "todo-listBtn":
+            result = "files/todo.mp4";
+            break;
+        case "login-systemBtn":
+            result = "files/login.mp4";
+            break;
+        default:
+            console.log("not found.");
+            break;
+    }
+    return result;
+}
