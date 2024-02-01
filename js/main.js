@@ -102,6 +102,9 @@ function getVideoLink(btnClass) {
         case "tiktaktoBtn":
             result = "files/tiktaktoe.mp4";
             break;
+        case "blogBtn":
+            result = "files/blog.mp4";
+            break;
         case "todo-listBtn":
             result = "files/todo.mp4";
             break;
