@@ -408,7 +408,7 @@ span {
 }
 
 .skill-bar .bar .codeigniter {
-    width: 60%;
+    width: 55%;
     animation: codeigniter 3s;
 }
 
@@ -417,13 +417,27 @@ span {
         width: 0;
     }
     100% {
-        width: 60%;
+        width: 55%;
     }
 }
 
 .skill-bar .bar .github {
     width: 55%;
     animation: github 3s;
+}
+
+.skill-bar .bar .laravel9 {
+    width: 60%;
+    animation: laravel9 3s;
+}
+
+@keyframes laravel9 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
 }
 
 @keyframes github {

@@ -56,7 +56,7 @@ ScrollReveal().reveal('.home-content p, .about-content, .contact-content', { ori
 
 /*================================ typed js ================================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Junior Web Developer', 'Junior Codeigniter Developer', 'friend'],
+    strings: ['Junior Web Developer', 'Junior Codeigniter Developer', 'Junior Laravel Developer', 'friend'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
