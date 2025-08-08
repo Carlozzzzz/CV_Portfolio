@@ -449,6 +449,29 @@ span {
     }
 }
 
+.skill-bar .bar .csharp {
+    width: 60%;
+    animation: csharp 3s;
+}
+
+@keyframes csharp {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes github {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
 /* Portfolio */
 .portfolio {
     background: var(--second-bg-color);

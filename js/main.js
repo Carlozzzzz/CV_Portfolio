@@ -56,7 +56,7 @@ ScrollReveal().reveal('.home-content p, .about-content, .contact-content', { ori
 
 /*================================ typed js ================================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Junior Web Developer', 'Junior Codeigniter Developer', 'Junior Laravel Developer', 'friend'],
+    strings: ['Junior Software Developer', 'always curious', 'a learner', 'a friend'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -90,6 +90,15 @@ closeVideo.onclick = () => {
 function getVideoLink(btnClass) {
     let result = "";
     switch (btnClass) {
+        case "mini-inventory":
+            result = "files/miniinventory.mp4";
+            break;
+        case "simple-crud":
+            result = "files/SimpleCrudCsharp.mp4";
+            break;
+        case "todo-csharp":
+            result = "files/TodoCsharp.mp4";
+            break;
         case "online-enrollmentBtn":
             result = "files/onlineenrollment.mp4";
             break;
